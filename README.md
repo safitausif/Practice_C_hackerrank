@@ -1,1 +1,0 @@
-# Practice_C_hackerrank

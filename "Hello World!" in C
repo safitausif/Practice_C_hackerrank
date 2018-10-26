@@ -1,0 +1,15 @@
+# Practice_C_hackerrank
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() 
+{
+	
+  char s[100];
+
+gets(s);
+printf("hello, world!\n%s",s);
+  
+    return 0;
+}
