@@ -1,0 +1,26 @@
+# Practice_C_hackerrank
+#include<stdio.h>
+
+int main(){
+    int n[2], i=0, max_a=0, max_o=0, max_x=0, temp_a, temp_o, temp_x;
+    
+    while(scanf("%d", &n[i++])!=EOF);
+    
+    for(i=1; i<=n[0]; i++){
+        for(int j=1; j<=n[0]; j++){
+            temp_a=i&j;
+            temp_o=i|j;
+            temp_x=i^j;
+            if(i!=j){
+                if(temp_a>max_a&&temp_a<n[1]){max_a=temp_a;}
+                if(temp_o>max_o&&temp_o<n[1]){max_o=temp_o;}
+                if(temp_x>max_x&&temp_x<n[1]){max_x=temp_x;}
+            }
+            
+        }
+    }
+    
+    printf("%d\n%d\n%d", max_a, max_o, max_x);
+    
+    return 0;
+}
